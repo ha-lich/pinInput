@@ -1,0 +1,1 @@
+export const CAKE_BNB = '0x45c54210128a065de780C4B0Df3d16664f7f859e'

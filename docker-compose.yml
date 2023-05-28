@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: "bcg-management-panel-fe"
+    build:
+      context: .
+      dockerfile: ${ENVDOCKER}
+    command: yarn $ENVBRANCH
+    ports:
+      - "${PORT}:4000"
+    stdin_open: true
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    restart: always

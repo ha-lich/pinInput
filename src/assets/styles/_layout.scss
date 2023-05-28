@@ -1,0 +1,230 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $bodyColor;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#app-layout {
+  min-height: 100vh;
+
+  .ant-layout-sider {
+    background: #2f4791;
+  }
+
+  .ant-menu {
+    background: transparent;
+    // height: calc(100vh - 160px);
+    // overflow-y: auto;
+
+    &.ant-menu-inline {
+      border-right: none;
+      padding: 0px 15px 15px 15px;
+      gap: 15px;
+
+      .ant-menu-item {
+        color: #fff;
+        font-weight: 600;
+        width: 100%;
+        margin: 0;
+        border-radius: 5px;
+        padding: 10px;
+        height: auto;
+        line-height: initial;
+        text-transform: capitalize;
+        font-size: 16px;
+
+        &:after {
+          display: none;
+        }
+
+        .ant-menu-item-icon {
+          font-size: 24px;
+        }
+      }
+
+      .ant-menu-submenu-selected {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+
+        .ant-menu-item {
+          padding-left: 38px !important;
+        }
+      }
+
+      .ant-menu-submenu {
+        .ant-menu-submenu-title {
+          color: #fff;
+          font-weight: 600;
+          width: 100%;
+          margin: 0;
+          border-radius: 5px;
+          padding: 15px;
+          height: auto;
+          line-height: initial;
+
+          &:after {
+            display: none;
+          }
+
+          .ant-menu-submenu-arrow {
+            color: #fff;
+          }
+
+          a {
+            color: #fff;
+          }
+        }
+
+        .ant-menu-item-group-title {
+          color: #fff;
+        }
+      }
+    }
+
+    &.ant-menu:not(.ant-menu-horizontal) {
+      .ant-menu-item-selected {
+        background: #586ca6;
+      }
+    }
+
+    &.ant-menu {
+      .ant-menu-item {
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+
+    a {
+      display: block;
+      height: 100%;
+      text-align: center;
+
+      img {
+        width: 80px;
+        border-radius: 50%;
+      }
+    }
+
+    .user_name {
+      flex: 1;
+
+      a {
+        display: block;
+        color: #fff;
+        text-align: right;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .logout {
+    padding: 0 24px;
+    text-align: center;
+  }
+}
+
+.top_page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  .page_name {
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #2f4791;
+    margin-bottom: 0;
+  }
+}
+
+.app_table {
+  height: calc(100vh - 260px);
+  overflow-y: auto;
+  margin-bottom: 2rem;
+}
+
+.app_skeleton {
+  height: calc(100vh - 196px);
+}
+
+.ant-table {
+  font-size: 16px;
+}
+
+.item {
+  margin-bottom: 20px;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  .sub-item {
+    padding-left: 10px;
+  }
+}
+
+/* Works for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.fake-password {
+  -webkit-text-security: disc;
+}
+#pin_input {
+  text-align: center;
+  margin-top: 50px;
+}
+.pin-input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	width: 30px;
+	height: 40px;
+	margin-right: 10px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 18px;
+}
+
+input.filled {
+	background-color: #e0e0e0;
+}
+
+.secret-mode {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+	margin-bottom: 15px;
+}
