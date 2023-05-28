@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkadmin_panel=self.webpackChunkadmin_panel||[]).push([[158],{3158:function(n,e,c){c.r(e),c.d(e,{default:function(){return t}});var i=c(9867),s=c(2834);function t(){return(0,i.useEffect)((function(){window.scrollTo(0,0)}),[]),(0,s.jsx)("section",{children:(0,s.jsx)("div",{className:"",children:"Register Page"})})}}}]);
+//# sourceMappingURL=158.9487f831.chunk.js.map
